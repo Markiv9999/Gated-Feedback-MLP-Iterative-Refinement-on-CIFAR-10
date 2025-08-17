@@ -73,5 +73,28 @@ Windows needs additional dependencies (this version was validated on windows cau
 ## Results
 CIFAR 10 (Best iter accuracy happens around 4th iteration every inference)
 
+| Epoch | Single-Step Accuracy (%) | Iterative Best Accuracy (%) |
+|-------|-------------------------|----------------------------|
+| 1     | 40.7                    | 44.0                       |
+| 2     | 40.7                    | 45.4                       |
+| 3     | 42.8                    | 49.5                       |
+| 4     | 42.8                    | 51.7                       |
+| 5     | 45.1                    | 53.0                       |
+| 6     | 45.5                    | 53.6                       |
+| 7     | 46.1                    | 54.3                       |
+| 8     | 46.2                    | 55.2                       |
+| 9     | 46.0                    | 55.1                       |
+| 10    | 44.6                    | 55.9                       |
+| 11    | 44.0                    | 55.9                       |
+| 12    | 45.2                    | 55.9                       |
+| 13    | 46.9                    | 56.7                       |
+| 14    | 46.5                    | 57.3                       |
+| 15    | 46.9                    | 56.1                       |
+| 16    | 45.2                    | 57.7                       |
+| 17    | 44.3                    | 57.6                       |
+| 18    | 44.4                    | 58.8                       |
+| 19    | 44.0                    | 58.1                       |
+| 20    | 45.4                    | 58.9                       |
+
 ![Feedback MLP Accuracy Progression](Cifar-10_leaky_relu.png)
 
