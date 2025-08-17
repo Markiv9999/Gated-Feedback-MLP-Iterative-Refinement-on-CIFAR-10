@@ -68,6 +68,10 @@ cd gated-feedback-mlp
 pip install torch torchvision numpy matplotlib
 Windows needs additional dependencies (this version was validated on windows cause my linux system is not with me right now)
 
+```
+---
 ## Results
+CIFAR 10 (Best iter accuracy happens around 4th iteration every inference)
+
 ![Feedback MLP Accuracy Progression](Cifar-10_leaky_relu.png)
 
