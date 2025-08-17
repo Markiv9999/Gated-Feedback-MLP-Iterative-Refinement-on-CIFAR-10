@@ -15,7 +15,8 @@ The goal isn’t to push state-of-the-art results, but to show that feedback in 
   - CIFAR-10 (image classification)
   - MNIST (handwritten digit recognition)
   - Two Moons (synthetic 2D toy dataset)  
-- 🔹 Uses **ReLU**, **Leaky ReLU** activation for improved stability and training convergence  
+- 🔹 Uses **ReLU**, **Leaky ReLU** activation for improved stability and training convergence
+-  Unrolled Training: During training, the network is unrolled for a small number of feedback steps (default 5), and backpropagation is performed through this unrolled graph. This allows the model to learn from multiple feedback refinements during training, while still keeping training cost manageable. At test time, the model can be iterated for many more steps (e.g., up to 50) without additional training, but the typical peak improvement is seen within the trained iterations so far.
 
 ---
 
@@ -29,7 +30,8 @@ The goal isn’t to push state-of-the-art results, but to show that feedback in 
 
 - Accuracy **increases with iterative inference** compared to single-pass.  
 - **Leaky ReLU** activations improved training convergence and slightly boosted accuracy.  
-- Best improvements observed on **CIFAR-10** (~10% relative gain).  
+- Best improvements observed on **CIFAR-10** (~10% relative gain).
+- 
 
 ---
 
@@ -43,8 +45,7 @@ The goal isn’t to push state-of-the-art results, but to show that feedback in 
 This simple feedback loop allows the model to refine its internal representation step by step.  
 
 
-Unrolled Training:
-During training, the network is unrolled for a small number of feedback steps (default 5), and backpropagation is performed through this unrolled graph. This allows the model to learn from multiple feedback refinements during training, while still keeping training cost manageable. At test time, the model can be iterated for many more steps (e.g., up to 50) without additional training, but the typical peak improvement is seen within the trained iterations so far.
+
 ---
 🔧 Tested Variations
 
@@ -66,3 +67,7 @@ git clone https://github.com/your-username/gated-feedback-mlp.git](https://githu
 cd gated-feedback-mlp
 pip install torch torchvision numpy matplotlib
 Windows needs additional dependencies (this version was validated on windows cause my linux system is not with me right now)
+
+## Results
+![Feedback MLP Accuracy Progression](Cifar-10_leaky_relu.png)
+
