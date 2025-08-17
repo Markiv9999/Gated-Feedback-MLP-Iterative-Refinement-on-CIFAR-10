@@ -1,0 +1,2 @@
+# Gated-Feedback-MLP-Iterative-Refinement-on-CIFAR-10
+This repository implements a Multilayer Perceptron (MLP) with gated output-to-input feedback loops and iterative inference, evaluated on CIFAR-10, MNIST, and two moons datasets. The model refines predictions by feeding transformed outputs back into the input over several iterations, demonstrating how iterative processing can affect MLP performance.
