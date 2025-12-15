@@ -5,6 +5,13 @@ This project explores a simple but effective idea:
 
 The goal isn’t to push state-of-the-art results, but to show that feedback in MLPs can mimic some CNN-like improvements in performance.
 
+Disclaimer: Vibe code!!!!!!
+
+Some of this repository was vibe coded with gpt 5, unlike my other repositories, it was interesting to see the results of iterative refinement and model size without having to sit down and write every line, one day when i have the time ill get around to doing this project from scratch, until then do what you will with this info.
+
+Best,
+Vikram
+
 ---
 
 ## ✨ Features
